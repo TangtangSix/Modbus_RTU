@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"modbus_rtu\startup_stm32f103xb.o"
+"modbus_rtu\main.o"
+"modbus_rtu\gpio.o"
+"modbus_rtu\dma.o"
+"modbus_rtu\usart.o"
+"modbus_rtu\stm32f1xx_it.o"
+"modbus_rtu\stm32f1xx_hal_msp.o"
+"modbus_rtu\stm32f1xx_hal_gpio_ex.o"
+"modbus_rtu\stm32f1xx_hal_tim.o"
+"modbus_rtu\stm32f1xx_hal_tim_ex.o"
+"modbus_rtu\stm32f1xx_hal_uart.o"
+"modbus_rtu\stm32f1xx_hal.o"
+"modbus_rtu\stm32f1xx_hal_rcc.o"
+"modbus_rtu\stm32f1xx_hal_rcc_ex.o"
+"modbus_rtu\stm32f1xx_hal_gpio.o"
+"modbus_rtu\stm32f1xx_hal_dma.o"
+"modbus_rtu\stm32f1xx_hal_cortex.o"
+"modbus_rtu\stm32f1xx_hal_pwr.o"
+"modbus_rtu\stm32f1xx_hal_flash.o"
+"modbus_rtu\stm32f1xx_hal_flash_ex.o"
+"modbus_rtu\stm32f1xx_hal_exti.o"
+"modbus_rtu\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Modbus_RTU\Modbus_RTU.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Modbus_RTU.map" -o Modbus_RTU\Modbus_RTU.axf
